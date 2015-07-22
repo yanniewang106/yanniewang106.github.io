@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Hangman - Hard Mode</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/hangman.css" />
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	</head>
+
+	<body>
+		<audio src="audio/good.wav" id="good"></audio>
+		<audio src="audio/bad.wav" id="bad"></audio>
+		<audio src="audio/win.mp3" id="win"></audio>
+		<audio src="audio/lose.mp3" id="lose"></audio>
+		<div class="container" id="hangmanbox" align="center">
+			<h1 align="center">HARD MODE</h1>
+			<div class="alphabet-buttons" id="buttons"></div>
+			<p id="catagoryName"></p>
+			<div id="hold"></div>
+			<p id="mylives"></p>
+			<p id="clue">Clue: </p>
+			<canvas id="stickman">This Text will show if the Browser does NOT support HTML5 Canvas tag</canvas>
+			<div class="other-buttons">
+				<button id="hint">Hint</button>
+				<button id="reset">Reset</button>
+				<button id="back"><a href="index.html">Main Menu</a></button>
+			</div>
+		</div>
+		<!-- javascript -->
+		<script type="text/javascript" src="js/hangman-hard-mode.js"></script>
+	</body>
+</html>

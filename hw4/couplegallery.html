@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Our Love's Gallery</title>
+
+		<script type="text/javascript" src="js\jquery-1.10.1.min.js"></script>
+		<script type="text/javascript" src="js\jquery.imagebox.js"></script>
+		<link href="css\style.css" rel = "stylesheet" type="text/css" />
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.imagebox').imagebox();
+			});
+		</script>
+		<script>
+			var x=document.getElementById("demo");
+			function getLocation(){
+  				if (navigator.geolocation)
+   				{
+    				navigator.geolocation.getCurrentPosition(showPosition);
+    			} else {
+    				x.innerHTML="Geolocation is not supported by this browser.";
+    			}
+  			}
+			function showPosition(position)
+ 			{
+  				x.innerHTML="Latitude: " + position.coords.latitude + "<br />Longitude: " + position.coords.longitude;	
+  			}
+		</script>
+		<style type="text/css">
+			.imagebox-custom .imagebox-skin{
+				box-shadow: 0 0 50px #222;
+			}
+		</style>
+	</head>
+	<body background="images\2.jpg">
+		<div id="head" align="center">
+			<div id="header">
+				<h1>Yannie's Homepage</h1>
+				<p>Welcome to my mini-homepage..！</p>
+				<br><br>
+				<table id="maintable" align="center">
+					<tr>
+						<th width="20%"><a href="\Users\yannie_wang106\Desktop\2015-2016 夏\Web前端技术实训\作业\1\2013080035_王晓薇_作业1\src\index.html">Home</a></th>
+						<th width="20%"><a href="\Users\yannie_wang106\Desktop\2015-2016 夏\Web前端技术实训\作业\1\2013080035_王晓薇_作业1\src\diary.html">My Diary</a></th>
+						<th width="20%"><a href="\Users\yannie_wang106\Desktop\2015-2016 夏\Web前端技术实训\作业\1\2013080035_王晓薇_作业1\src\course.html">Course Gallery</a></th>
+						<th width="20%"><a href="\Users\yannie_wang106\Desktop\2015-2016 夏\Web前端技术实训\作业\1\2013080035_王晓薇_作业1\src\gallery.html">Photo Gallery</a></th>
+						<th width="20%"><a href="\Users\yannie_wang106\Desktop\2015-2016 夏\Web前端技术实训\作业\1\2013080035_王晓薇_作业1\src\about me.html">About Me</a></th>
+					</tr>
+				</table>
+			</div>
+		<div id="main" align="center">
+			<div id="maintext" align="center">
+				<br><br>
+				<h1 align="center">L.O.V.E</h1>
+				<p align="center">It's not about me, not about you.</p>
+				<p align="center">It's about us.</p>
+				<ul class="parent clear">
+					<li>
+						<div class="pic">
+							<a href="images\photo1.jpeg" class="imagebox" data-imagebox="gallery" title="r these ur couple shirts?" onclick="getLocation()">
+							<img src="images\thumbnail\photo1.jpeg" alt=""/>
+							</a>
+							<h5>r these ur couple shirts?</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo2.jpeg" class="imagebox" data-imagebox="gallery" title="waiting..." onclick="getLocation()">
+							<img src="images\thumbnail\photo2.jpeg" alt=""/>
+							</a>
+							<h5>waiting...</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo3.jpeg" class="imagebox" data-imagebox="gallery" title="night snacks!! Yumm.." onclick="getLocation()">
+							<img src="images\thumbnail\photo3.jpeg" />
+							</a>
+							<h5>night snacks!! Yumm..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo4.jpeg" class="imagebox" data-imagebox="gallery" title="my stupid boy.. hahaa" onclick="getLocation()">
+							<img src="images\thumbnail\photo4.jpeg" />
+							</a>
+							<h5>my stupid boy.. hahaa</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo5.jpeg" class="imagebox" data-imagebox="gallery" title="LOL" onclick="getLocation()">
+							<img src="images\thumbnail\photo5.jpeg" />
+							</a>
+							<h5>LOL</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo6.jpeg" class="imagebox" data-imagebox="gallery" title="..." onclick="getLocation()">
+							<img src="images\thumbnail\photo6.jpeg" />
+							</a>
+							<h5>...</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo7.jpeg" class="imagebox" data-imagebox="gallery" title="no caption needed" onclick="getLocation()">
+							<img src="images\thumbnail\photo7.jpeg" />
+							</a>
+							<h5>no caption needed</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo8.jpeg" class="imagebox" data-imagebox="gallery" title="tiriruriiii.. hahaa.." onclick="getLocation()">
+							<img src="images\thumbnail\photo8.jpeg" />
+							</a>
+							<h5>tiriruriiii.. hahaa..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo9.jpeg" class="imagebox" data-imagebox="gallery" title="strawberry + vanilla = ?" onclick="getLocation()">
+							<img src="images\thumbnail\photo9.jpeg" />
+							</a>
+							<h5>strawberry + vanilla = ?</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo10.jpeg" class="imagebox" data-imagebox="gallery" title="monday date! <3" onclick="getLocation()">
+							<img src="images\thumbnail\photo10.jpeg" />
+							</a>
+							<h5>monday date! <3</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo11.jpeg" class="imagebox" data-imagebox="gallery" title="刷讲座了.. 刷讲座了.." onclick="getLocation()">
+							<img src="images\thumbnail\photo11.jpeg" />
+							</a>
+							<h5>刷讲座了.. 刷讲座了..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo12.jpeg" class="imagebox" data-imagebox="gallery" title="刷讲座了.. 刷讲座了.." onclick="getLocation()">
+							<img src="images\thumbnail\photo12.jpeg" />
+							</a>
+							<h5>刷讲座了.. 刷讲座了..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo13.jpeg" class="imagebox" data-imagebox="gallery" title="chu.. <3" onclick="getLocation()">
+							<img src="images\thumbnail\photo13.jpeg" />
+							</a>
+							<h5>chu.. <3</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo14.jpeg" class="imagebox" data-imagebox="gallery" title="still, no caption.." onclick="getLocation()">
+							<img src="images\thumbnail\photo14.jpeg" />
+							</a>
+							<h5>still, no caption..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo15.jpeg" class="imagebox" data-imagebox="gallery" title="0330" onclick="getLocation()">
+							<img src="images\thumbnail\photo15.jpeg" />
+							</a>
+							<h5>0330</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo16.jpeg" class="imagebox" data-imagebox="gallery" title="love, loved, loved.." onclick="getLocation()">
+							<img src="images\thumbnail\photo16.jpeg" />
+							</a>
+							<h5>love, loved, loved..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo17.jpeg" class="imagebox" data-imagebox="gallery" title="gonna erase my make up!!" onclick="getLocation()">
+							<img src="images\thumbnail\photo17.jpeg" />
+							</a>
+							<h5>gonna erase my make up!!</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo18.jpeg" class="imagebox" data-imagebox="gallery" title="tralalaaa.." onclick="getLocation()">
+							<img src="images\thumbnail\photo18.jpeg" />
+							</a>
+							<h5>tralalaaa..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo19.jpeg" class="imagebox" data-imagebox="gallery" title="we need a caption.." onclick="getLocation()">
+							<img src="images\thumbnail\photo19.jpeg" />
+							</a>
+							<h5>we need a caption..</h5>
+						</div>
+					</li>
+					<li>
+						<div class="pic">
+							<a href="images\photo20.jpeg" class="imagebox" data-imagebox="gallery" title="jelek banget aku..!" onclick="getLocation()">
+							<img src="images\thumbnail\photo20.jpeg" />
+							</a>
+							<h5>jelek banget aku..!</h5>
+						</div>
+					</li>
+				</ul>
+			</div>
+		<div id="footer" align="center">
+			Copyright © 2015 Yannie Wang. All rights reserved.
+		</div>
+	</div>
+	</body>
+</html>

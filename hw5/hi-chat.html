@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Hi! Chat</title>
+		<link type="text/css" rel="stylesheet" href="css/style.css" />
+	</head>
+
+	<body>
+
+		<!-- CHAT MARKUP -->
+		<h1>Hi! Chat</h1>
+		<h4>Make your day better by saying "hi!"</h4>
+		<div id="container">
+			<div id="menu">
+				<p class="loggedin">Logged in as <b></b></p>
+				<input type='text' id='nameInput' placeholder='enter a username...'>
+				<p class="logout"><a id="exit" href="#">Close</a></p>
+				<div style="clear:both"></div>
+			</div>
+
+			<ul id="chatbox"></ul>
+
+			<form name="message" action="">
+				<input name="messageInput" type="text" id="messageInput" placeholder='Type a message...'>
+				<button name="submitMessage" type="button" id="submitMessage">Send</button>
+			</form>
+		</div>
+
+		<!-- CHAT JAVASCRIPT -->
+		<script type='text/javascript' src="js/jquery-1.9.0.min.js"></script>
+		<script type='text/javascript' src="js/firebase.js"></script>
+		<script type='text/javascript' src="js/hi-chat.js"></script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+div#head
+{
+	position: relative;
+	margin: auto;
+	width: 780px;
+}
+
+div#header
+{
+	height: 130px;
+	width: 780px;
+	background-color: #ffe4e1;
+	color: #dc143c;
+	font-family: Arial;
+}
+
+div#main
+{
+	margin: auto;
+	width: 780px;
+}
+
+div#maintext
+{
+	background: #fff0f5;
+	width: 780px;
+	height: 1000px;
+}
+
+#maintable
+{
+	position: absolute;
+	width: 780px;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+#maintable td, #maintable th
+{
+	font-size: 1em;
+	border: 1px solid magenta;
+	background-color: pink;
+	font-family: Comic Sans MS;
+	color: purple;
+}
+
+div#footer
+{
+	background: #ffe4e1;
+	color: #dc143c;
+	text-align: right;
+}
+
+a.page:link {color: pink;}
+a.page:visited {color: purple;}
+a.page:hover {color: yellow;}
+
+a.backToTop
+{
+	display: none;
+	width: 60px;
+	height: 60px;
+	background: url("/Users/yannie_wang106/Desktop/2015-2016 夏/Web前端技术实训/作业/3/2013080035_王晓薇_作业3/src/images/tese12.gif");
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	left: 100px;
+	top: 100px;
+	border-radius: 30px;
+}
+
+a.backToTop:hover
+{
+	background-position: -113px 0
+}
+	
+.modal
+{
+	visibility: hidden;
+	top: 100px; 
+	left: 50%;
+	margin-left: -300px;	
+	width: 520px;
+	background: #eee url("/Users/yannie_wang106/Desktop/2015-2016 夏/Web前端技术实训/作业/3/2013080035_王晓薇_作业3/src/images/back.jpg") no-repeat 0 0;
+	position: absolute;
+	z-index: 101;
+	padding: 30px 40px 34px;
+	border-radius: 15px;
+}
+	
+.modal .closeModal
+{
+		font-size: 22px;
+		line-height: .5;
+		position: absolute;
+		top: 8px;
+		right: 11px;
+		color: #aaa;
+		text-shadow: 0 -1px 1px rbga(0,0,0,.6);
+		font-weight: bold;
+		cursor: pointer;
+} 

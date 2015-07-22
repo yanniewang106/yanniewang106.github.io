@@ -1,0 +1,143 @@
+button
+{
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #FFF0F5;
+  color: #FF69B4;
+  border: solid 1px #FFF;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 18px 10px;
+  width: 150px;
+  height: 20px;
+  margin-top: 10px;
+  outline: none;
+}
+
+button:hover
+{
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.alphabet-buttons
+{
+  margin: 15px auto;
+  padding: 0;
+  max-width: 900px;
+}
+
+.alphabet-buttons li
+{
+  float: left;
+  margin: 0 10px 10px 10px;
+  list-style: none;
+  width: 35px;
+  height: 30px;
+  padding-top: 10px;
+  background: #FFF;
+  color: #FF69B4;
+  cursor: pointer;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border: solid 1px #FF69B4;
+}
+
+.alphabet-buttons:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.alphabet-buttons li:hover
+{
+  background: #FFF0F5;
+  border: solid 1px #FFF;
+  color: #FFB6C1;
+}
+
+h1
+{
+  font-family: Comic Sans MS;
+  text-transform: uppercase;
+  margin: 5px 0;
+  color: #DB7093;
+}
+
+canvas
+{
+  color: #FFF;
+  border: #FFF dashed 2px;
+  padding: 15px;
+}
+
+#my-word
+{
+  margin: 0;
+  display: block;
+  padding: 0;
+  display: block;
+}
+
+#my-word li
+{
+  position: relative;
+  list-style: none;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.active
+{
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+.active:hover
+{
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+#mylives
+{
+  text-align: center;
+  display: block;
+}
+
+@media (max-width: 767px)
+{
+  .alphabet-buttons
+  {
+    padding: 0 0 0 15px;
+  }
+}
+
+@media (max-width: 480px)
+{
+  .alphabet-buttons
+  {
+    padding: 0 0 0 25px;
+  }
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="UTF-8" />
+	<title>简易DOM选择器</title>
+	<script type="text/javascript" src="/Users/yannie_wang106/Desktop/2015-2016 夏/Web前端技术实训/作业/3/2013080035_王晓薇_作业3/src/js/jquery.js"></script>
+	<script type="text/javascript">
+			function getValueID(){
+				var domID = $('#myHeader').get(0);
+				alert("It's a Bachelor Degree's List");
+			}
+			function getValueClassName(){
+				var domClass = $('.myTitle');
+				domClass.css("background-color", "#B2E0FF");
+			}
+			function getValueTagName(){
+				var domTag = $('table');
+				alert("This document contains " + domTag.length + " tables.");
+			}
+	</script>
+ 	</head>
+	<body>
+
+		<h1 id="myHeader" onclick="getValueID()" align="center">List of Indonesian Student in Tsinghua</h1>
+		<div class="myTitle" onclick="getValueClassName()">
+		<h3 align="center">2011 Year</h1>
+		<table align ="center" width="500" border="1">
+			<tr>
+				<th width="25%">Name</th>
+				<th width="25%">Chinese Name</th>
+				<th width="25%">Major</th>
+				<th width="25%">Birthplace</th>
+			</tr>
+			<tr>
+				<th>Vina</th>
+				<th>黄青娇</th>
+				<th>环境工程</th>
+				<th>Jakarta</th>
+			</tr>
+			<tr>
+				<th>Rhea</th>
+				<th>王美英</th>
+				<th>材料工程</th>
+				<th>Semarang</th>
+			</tr>
+			<tr>
+				<th>Peter</th>
+				<th>朱肇硕</th>
+				<th>生命科学</th>
+				<th>Bandung</th>
+			</tr>
+			<tr>
+				<th>Sienny</th>
+				<th>黄韵璇</th>
+				<th>中文系</th>
+				<th>Semarang</th>
+			</tr>
+			<tr>
+				<th>Natasha</th>
+				<th>曾维霞</th>
+				<th>中文系</th>
+				<th>Jakarta</th>
+			</tr>
+			<tr>
+				<th>Shanty</th>
+				<th>郭玉珊</th>
+				<th>美院-工业设计</th>
+				<th>Surabaya</th>
+			</tr>
+		</table>
+		<h3 align="center">2012 Year</h1>
+		<table align ="center" width="500" border="1">
+			<tr>
+				<th width="25%">Name</th>
+				<th width="25%">Chinese Name</th>
+				<th width="25%">Major</th>
+				<th width="25%">Birthplace</th>
+			</tr>
+			<tr>
+				<th>Wendy</th>
+				<th>杨霖尊</th>
+				<th>土木工程</th>
+				<th>Jakarta</th>
+			</tr>
+			<tr>
+				<th>Livia</th>
+				<th>周丽慧</th>
+				<th>美院-环境设计</th>
+				<th>Jakarta</th>
+			</tr>
+		</table>
+		<h3 align="center">2013 Year</h1>
+		<table align ="center" width="500" border="1">
+			<tr>
+				<th width="25%">Name</th>
+				<th width="25%">Chinese Name</th>
+				<th width="25%">Major</th>
+				<th width="25%">Birthplace</th>
+			</tr>
+			<tr>
+				<th>Yannie</th>
+				<th>王晓薇</th>
+				<th>软件工程</th>
+				<th>Surabaya</th>
+			</tr>
+			<tr>
+				<th>Rita</th>
+				<th>黄丽妲</th>
+				<th>生物医学工程</th>
+				<th>Pontianak</th>
+			</tr>
+			<tr>
+				<th>David</th>
+				<th>谢志鑫</th>
+				<th>生物医学工程</th>
+				<th>Jakarta</th>
+			</tr>
+			<tr>
+				<th>Melvina</th>
+				<th>余美玉</th>
+				<th>中文系</th>
+				<th>Medan</th>
+			</tr>
+		</table>
+		<h3 align="center">2014 Year</h1>
+		<table align ="center" width="500" border="1">
+			<tr>
+				<th width="25%">Name</th>
+				<th width="25%">Chinese Name</th>
+				<th width="25%">Major</th>
+				<th width="25%">Birthplace</th>
+			</tr>
+			<tr>
+				<th>Lia</th>
+				<th>许小丽</th>
+				<th>中文系</th>
+				<th>Jakarta</th>
+			</tr>
+		</table>
+		</div>
+		<br><br>
+		<input type="button" onclick="getValueTagName()" value="How many tables in this page?"/>
+		<br><br>
+		<a href="index3.html">Return to Index</a>
+	</body>
+</html>
